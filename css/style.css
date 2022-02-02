@@ -8,22 +8,116 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+.green {
+    color: #4BC801;
+}
+
 body{
     background-color: black;
 }
 
 header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: black;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 3em;
     width: 100%;
+    z-index: 1;
 }
 
 .top-btn {
     background-color: #474747;
     color: white;
     border-radius: .3em;
-    padding: .3em;
+    padding: .5em;
     margin-right: .5em;
+}
+
+main {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.user {
+    margin: .2em;
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    left: 0;
+    bottom: 4px; /* Perché? */
+    background-color: rgba(71, 71, 71, .5);
+    color: white;
+    padding: .2em;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;    
+    height: 5em;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    color: white;
+}
+
+footer a:visited {
+    color: white;
+}
+
+.mic-cam {
+    display: flex;
+    align-items: center;
+}
+
+.foot-btn {
+    text-align: center;
+    margin: 0 1em;
+}
+
+.foot-btn * {
+    padding: .1em 0;
+}
+
+.foot-btn .fa-solid {
+    font-size: 2em;
+    display: block;
+}
+
+.foot-btn span {
+    font-size: .8em;
+}
+
+.mid-footer {
+    display: flex;
+    align-items: center;
+}
+
+
+.exit {
+    background-color: #4A4A4A;
+    color: red;
+    line-height: 5em;
+    padding: 0 1em;
+}
+
+.exit:visited {
+    color: red;
 }
