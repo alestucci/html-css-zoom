@@ -66,13 +66,17 @@ main {
     position: relative;
 }
 
+.user img {
+    display: block;
+}
+
 .label {
     position: absolute;
     left: 0;
-    bottom: 4px; /* Perché? */
+    bottom: 0;
     background-color: rgba(71, 71, 71, .5);
     color: white;
-    padding: .2em;
+    padding: .3em .5em;
 }
 
 
@@ -80,7 +84,6 @@ main {
 
 footer {
     width: 100%;
-    min-width: 1045px;
     position: fixed;
     bottom: 0; 
     left: 50%;
@@ -90,7 +93,6 @@ footer {
     z-index: 1;
     background-color: #222222;
     color: white;
-    overflow-x: scroll;
 }
 
 footer a:visited {
@@ -98,11 +100,13 @@ footer a:visited {
 }
 
 .foot-cntnr {
+    min-width: 1050px;
     max-width: 1440px;
     margin: 0 auto;    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-x: visible;
 }
 
 .mic-cam {
